@@ -1,0 +1,25 @@
+---
+
+export interface Props {
+  // props go here
+}
+---
+
+<div id="elm-color-picker"></div>
+
+<script>
+  import { Elm } from '../Main.elm' 
+  
+  // Initialize 
+  const app = Elm.Main.init({
+    node: document.getElementById('elm-color-picker'),
+    flags: {
+      // Any initial data
+    }
+  });
+
+  // Optional: Handle ports
+  // app.ports.outgoingPort.subscribe((data) => {
+  //   // Handle data from Elm
+  // });
+</script>
